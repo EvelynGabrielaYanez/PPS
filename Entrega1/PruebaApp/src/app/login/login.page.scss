@@ -1,0 +1,54 @@
+#title {
+  text-align: center;
+  color: var(--ion-color-tertiary);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loginItem {
+  padding: 5% 0%;
+}
+
+.loginItem ion-label {
+  font-size: 3vh;
+  padding-bottom: 2%;
+  color: var(--ion-color-tertiary);
+  font-weight: bold;
+}
+
+ion-button {
+  margin-top: 3%;
+  font-size: 15px;
+  height: 25px;
+}
+
+ion-content {
+  --offset-botom: auto;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.avatar{
+  margin: auto;
+  height: auto;
+  width: 50%;
+  padding: 5vh;
+}
+
+
+.alertInvalid {
+  color: var(--ion-color-danger-tint);
+  margin: 0 0 0 2vh;
+  padding: 0;
+}

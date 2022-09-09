@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title id="title">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" has-header="true" >
+  <div id="container">
+    <ion-avatar class="avatar">
+      <img src="../../assets/icon/logo.ico" alt="Página en desarrollo">
+    </ion-avatar>
+    <form [formGroup]="login" (ngSubmit)="submitForm()" novalidate >
+      <ion-item class="loginItem" lines="full">
+        <ion-label position="stacked">Usuario</ion-label>
+        <ion-input type="text" formControlName="name" placeholder="Nombre de usuario"></ion-input>
+      </ion-item>
+      <ng-container *ngIf="hasFrmControlError('name') && (login.get('name').touched || login.get('name').dirty)">
+        <p class = "alertInvalid">{{getValidatorError('name')}}</p>
+      </ng-container>
+      <ion-item class="loginItem" lines="full">
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input type="password" formControlName="password" placeholder="Ingresar la contraseña"></ion-input>
+      </ion-item>
+      <ng-container  *ngIf="hasFrmControlError('password') && (login.get('password').touched || login.get('password').dirty)">
+        <p class = "alertInvalid">{{getValidatorErrorWithNumeric('password')}}</p>
+      </ng-container>
+      <ion-button type="submit" expand="block">Ingresar</ion-button>
+    </form>
+    <div>
+      <ion-button expand="block" (click)="SetFrmValidUser()">Usuario Correcto</ion-button>
+      <ion-button expand="block" (click)="SetFrmInvalidUser()">Ingreso Invalido</ion-button>
+      <ion-button expand="block" (click)="SetFrmNotFind()">Usuario No Registrado</ion-button>
+    </div>
+  </div>
+</ion-content>

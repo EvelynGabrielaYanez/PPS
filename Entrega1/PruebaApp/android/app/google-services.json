@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "853136205176",
+    "project_id": "pruebaapp-d37a7",
+    "storage_bucket": "pruebaapp-d37a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853136205176:android:1a8d94b0049af7f73a548d",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853136205176-57v0d9rfvau1a4flpetj4c1otemf5epd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmY4FGQoYwxTDF7QPaFplpkZSo0VOU6Iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853136205176-57v0d9rfvau1a4flpetj4c1otemf5epd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
